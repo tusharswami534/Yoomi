@@ -1,3 +1,4 @@
+// Nav bar 
 const navmenu = () => {
     document.getElementById("mobile-view").classList.toggle("max-md:top-0");
     document.getElementById("mobile-view").classList.toggle("max-md:right-0");
@@ -6,3 +7,31 @@ const navmenu = () => {
     document.getElementById("nav-line-out-side").classList.toggle("translate-x-6");
     document.getElementById("nav-line-out-side-1").classList.toggle("translate-x-6");
     document.body.classList.toggle("overflow-hidden");}
+
+    // First Slider 
+    $('.slider-box').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+
+    // Slider Footer
+    $(document).ready(function() {
+        $('.slider-lg-screen').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.slider-sm-screen',
+          infinite: true,
+        });
+  
+        $('.slider-sm-screen').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.slider-lg-screen',
+          centerMode: true,
+          focusOnSelect: true,
+            infinite: true,
+        });
+      });

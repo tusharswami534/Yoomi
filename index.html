@@ -45,12 +45,20 @@
       href="./assets/images/svg/fav-icon.svg"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               "dark-aquamarine": "#076787",
+              "gravel": "#4D4D4D",
+              "gull-grey": "#82B2C2",
             },
             container: {
               center: true,
@@ -68,6 +76,7 @@
     </script>
   </head>
   <body>
+    <!-- Header  -->
     <header>
       <div class="container mx-auto">
         <nav class="pt-8 flex px-3 justify-between items-center">
@@ -91,8 +100,9 @@
               class="w-full h-1 transition-all duration-300 bg-black origin-left rounded-md"
             ></span>
           </div>
-          <div id="mobile-view"
-            class="flex  gap-7 items-center max-md:fixed max-md:w-full max-md:h-full max-md:justify-center max-md:items-center max-md:-top-full max-md:-right-full transition-all duration-300 max-md:bg-white"
+          <div
+            id="mobile-view"
+            class="flex gap-7 items-center max-md:fixed max-md:w-full max-md:h-full max-md:justify-center max-md:items-center max-md:-top-full max-md:-right-full transition-all duration-300 max-md:bg-white"
           >
             <ul
               class="list-none flex gap-11 max-xl:gap-8 text-center max-md:flex-col flex-row"
@@ -117,6 +127,125 @@
         </nav>
       </div>
     </header>
+    <!-- SM Slider  -->
+     <section class="py-12">
+      <div class="max-w-[724px] max-md:m]px-3 mb-14 mx-auto">
+        <p
+          class="text-dark-aquamarine text-center font-medium text-base max-md:text-sm max-sm:text-xs"
+        >
+        Features
+        </p>
+        <p
+          class="text-4xl font-normal mt-2 plus-jakarta-font  max-sm:mt-1 text-center leading-[120%]"
+        >
+        Explore Our 
+          <span class="font-semibold"> Amazing Features </span>
+        </p>
+        <p class="text-center text-gravel mt-2.5  ">Yoomi is more than just a regular remote monitoring solution. Our product supports patients and providers through every step of the rehabilitation process</p>
+      </div>
+      <div class="container overflow-x-hidden drop-shadow-md mx-auto">
+        <div class="flex flex-wrap max-lg:flex-col">
+          <div class="w-6/12 max-lg:w-full">
+            <p
+            class="text-dark-aquamarine  font-medium text-base max-md:text-sm max-sm:text-xs"
+          >
+          Features
+          </p>
+          <p
+          class="text-3xl font-normal mt-2 plus-jakarta-font  max-sm:mt-1  leading-[120%]"
+        >
+        Extensive Exercise Library
+          <span class="font-semibold">  Library </span>
+        </p>
+        <div class="flex flex-col gap-2 mt-5">
+        <div class="flex gap-4 items-center">
+          <img src="./assets/images/svg/check.svg" alt="check">
+          <p class="lg:max-w-[394px] text-gravel text-base max-lg:text-sm max-sm:text-xs ">Utilize Yoomi’s HEP templates to quickly create and assign programs to your patients </p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <img src="./assets/images/svg/check.svg" alt="check">
+          <p class="lg:max-w-[394px] text-gravel text-base max-lg:text-sm max-sm:text-xs ">Choose from our library of exercises for all patient cases </p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <img src="./assets/images/svg/check.svg" alt="check">
+          <p class="lg:max-w-[394px] text-gravel text-base max-lg:text-sm max-sm:text-xs ">Use Yoomi’s industry-leading exercise generation tool to create your own exercises that track adherence and form in seconds</p>
+        </div>
+          </div>
+        </div>
+        <div class="w-6/12 relative  max-lg:w-full">
+          <div class="absolute bg-gull-grey min-w-[625px] min-h-[262px] -top-1/4 -right-1/4"></div>
+          <div class="slider-box">
+            <div>
+              <img class="w-full  "  src="./assets/images/webp/First-slider-image.webp" alt="slider">
+            </div>
+            <div>
+              <img  class="w-full " src="./assets/images/webp/First-slider-image.webp" alt="slider">
+            </div>
+            <div>
+              <img  class="w-full " src="./assets/images/webp/First-slider-image.webp" alt="slider">
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+     </section>
+    <!-- Slider Big screen  -->
+    <section class="py-12">
+      <div class="container mx-auto px-3">
+        <div class="max-w-[615px] mb-14 mx-auto">
+          <p
+            class="text-dark-aquamarine text-center font-medium text-base max-md:text-sm max-sm:text-xs"
+          >
+            Know More
+          </p>
+          <p
+            class="text-4xl font-normal mt-4 max-md:mt-3 max-sm:mt-2 text-center leading-[120%]"
+          >
+            And Used by the Biggest
+            <span class="font-semibold"> Figures in Sports and Rehab </span>
+          </p>
+        </div>
+          <div class="container mx-auto px-3">
+            <!-- Slider LG Screen -->
+            <div class="max-w-[946px] w-full min-h-[473px] slider-lg-screen mx-auto">
+              <div>
+                <img class="aspect-video w-full rounded-2xl " src="./assets/images/webp/footer-slider-img-1.webp" alt="slider image 1">
+              </div>
+              <div>
+                <img class="aspect-video w-full rounded-2xl " src="./assets/images/webp/footer-slider-img-2.webp" alt="slider image 2">
+              </div>
+              <div>
+                <img class="aspect-video w-full rounded-2xl " src="./assets/images/webp/footer-slider-img-1.webp" alt="slider image 3">
+              </div>
+              <div>
+                <img class="aspect-video w-full rounded-2xl " src="./assets/images/webp/footer-slider-img-3.webp" alt="slider image 4">
+              </div>
+            </div>
+        
+            <!-- Slider SM Screen -->
+            <div class="slider-sm-screen max-w-[716px] mt-9  mx-auto">
+              <div>
+                <img class="max-w-[152px] min-h-[114px] rounded" src="./assets/images/webp/footer-slider-img-1.webp" alt="slider">
+              </div>
+              <div>
+                <img class="max-w-[152px] min-h-[114px] rounded" src="./assets/images/webp/footer-slider-img-2.webp" alt="slider">
+              </div>
+              <div>
+                <img class="max-w-[152px] min-h-[114px] rounded" src="./assets/images/webp/footer-slider-img-1.webp" alt="slider">
+              </div>
+              <div>
+                <img class="max-w-[152px] min-h-[114px] rounded" src="./assets/images/webp/footer-slider-img-3.webp" alt="slider">
+              </div>
+            </div>
+          </div>
+        </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/app.js"></script>
+    
   </body>
 </html>
