@@ -1,44 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Primary Meta Tags -->
-<title>Yoomi</title>
-<meta name="title" content="Meta Tags — Preview, Edit and Generate" />
-<meta name="description" content="Next Generation Patient Engagement and RTM Solution✨" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Yoomi</title>
+    <meta name="title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta
+      name="description"
+      content="Next Generation Patient Engagement and RTM Solution✨"
+    />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="Yoomi" />
-<meta property="og:url" content="https://yoomi-15966.web.app" />
-<meta property="og:title" content="Meta Tags — Preview, Edit and Generate" />
-<meta property="og:description" content="Next Generation Patient Engagement and RTM Solution✨" />
-<meta property="og:image" content="/mete-icon.webp" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="Yoomi" />
+    <meta property="og:url" content="https://yoomi-15966.web.app" />
+    <meta
+      property="og:title"
+      content="Meta Tags — Preview, Edit and Generate"
+    />
+    <meta
+      property="og:description"
+      content="Next Generation Patient Engagement and RTM Solution✨"
+    />
+    <meta property="og:image" content="/mete-icon.webp" />
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://yoomi-15966.web.app" />
-<meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate" />
-<meta property="twitter:description" content="Next Generation Patient Engagement and RTM Solution✨" />
-<meta property="twitter:image" content="/mete-icon.webp" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yoomi-15966.web.app" />
+    <meta
+      property="twitter:title"
+      content="Meta Tags — Preview, Edit and Generate"
+    />
+    <meta
+      property="twitter:description"
+      content="Next Generation Patient Engagement and RTM Solution✨"
+    />
+    <meta property="twitter:image" content="/mete-icon.webp" />
 
-<!-- Meta Tags Generated with https://metatags.io -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline **text-clifford**">
-    Hello world!
-  </h1>
-</body>
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/svg/fav-icon.svg"
+      type="image/x-icon"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-aquamarine": "#076787",
+            },
+            container: {
+              center: true,
+              screens: {
+                sm: "992px",
+                md: "1140px",
+                md: "1140px",
+                xl: "1140px",
+                "2xl": "1140px",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container mx-auto">
+        <nav class="pt-8 flex px-3 justify-between items-center">
+          <a href="/">
+            <img src="./assets/images/svg/logo.svg" alt="logo" />
+          </a>
+          <div
+            onclick="navmenu()"
+            class="md:hidden cursor-pointer overflow-hidden z-[101] w-6 h-5 flex flex-col justify-between"
+          >
+            <span
+              id="nav-line-out-side"
+              class="w-full h-1 bg-black origin-left transition-all duration-300 rounded-md"
+            ></span>
+            <span
+              id="nav-line"
+              class="w-full h-1 bg-black transition-all relative after:w-full after:absolute after:rounded-md after:transition-all after:duration-300 after:h-full after:left-0 after:bg-black duration-300 rounded-md"
+            ></span>
+            <span
+              id="nav-line-out-side-1"
+              class="w-full h-1 transition-all duration-300 bg-black origin-left rounded-md"
+            ></span>
+          </div>
+          <div id="mobile-view"
+            class="flex  gap-7 items-center max-md:fixed max-md:w-full max-md:h-full max-md:justify-center max-md:items-center max-md:-top-full max-md:-right-full transition-all duration-300 max-md:bg-white"
+          >
+            <ul
+              class="list-none flex gap-11 max-xl:gap-8 text-center max-md:flex-col flex-row"
+            >
+              <li class=""><a href="/">About Us</a></li>
+              <li class=""><a href="/">News</a></li>
+              <li class=""><a href="/">Contact Us</a></li>
+              <li class="md:hidden">
+                <button
+                  class="md:hidden py-3 px-4 bg-dark-aquamarine text-white hover:bg-white border border-solid transition-all duration-300 rounded hover:border-dark-aquamarine hover:text-dark-aquamarine"
+                >
+                  Get Started
+                </button>
+              </li>
+            </ul>
+            <button
+              class="max-md:hidden py-3 px-4 bg-dark-aquamarine text-white hover:bg-white border border-solid transition-all duration-300 rounded hover:border-dark-aquamarine hover:text-dark-aquamarine"
+            >
+              Get Started
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
