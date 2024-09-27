@@ -37,3 +37,13 @@ const navmenu = () => {
             variableWidth: true,
         });
       });
+      // Hover Btn
+      const mousein = () => {
+        document.getElementById("mouse-hover").classList.add("shadow-bg-show")
+        document.getElementById("mouse-hover").classList.remove("shadow-bg-shows")
+      }
+      const mouseOut = () =>{
+        document.getElementById("mouse-hover").classList.remove("shadow-bg-show")
+        document.getElementById("mouse-hover").classList.add("shadow-bg-shows")
+
+      }

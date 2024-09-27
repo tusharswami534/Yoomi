@@ -54,10 +54,14 @@
     <script>
       tailwind.config = {
         theme: {
-      
+          boxShadow: {
+        'bg-show': ' inset 171px 0px 0px 0px #fff',
+        'bg-shows': ' inset 0px 50px 0px 0px #fff',
+      },
           extend: {
             dropShadow: {
         'sm': '0px 13px 18px 0px #0000000F',
+        'custom-md': '0px 26px 27px 0px #0000000A',
       },
             colors: {
               "dark-aquamarine": "#076787",
@@ -68,6 +72,9 @@
               "white-rock": "#E6E6E6",
               "gunmetal": "#333434",
               "friar-grey": "#808080",
+              "pale-grey": "#F8FDFF",
+              "vampire-grey": "#4B4C4D",
+              "off-green": "#ECF5F8",
               
             },
             container: {
@@ -87,7 +94,7 @@
   </head>
   <body>
 <!-- Header  -->
-<header>
+<header class="bg-pale-grey">
       <div class="container mx-auto">
         <nav class="pt-8 flex px-3 justify-between items-center">
           <a href="/">
@@ -137,6 +144,21 @@
         </nav>
       </div>
 </header>
+<main>
+<!-- Hero Section  -->
+<section class="bg-pale-grey">
+  <div class="container mx-auto ">
+    <h1 class="text-[52px] leading-[110%] text-center mx-auto pt-[122px] max-lg:text-5xl  max-md:text-4xl max-sm:text-3xl max-w-[819px]">
+      <span class="font-bold "> Next Generation</span> Patient Engagement and RTM Solution✨
+    </h1>
+    <p class="text-2xl text-vampire-grey leading-[110%] text-center pt-2">Industry leading AI motion-tracking technology</p>
+    <div style="box-shadow: 0px 4px 15px 0px #07678726;
+" class="bg-white mt-12 mx-auto px-1  rounded marker: flex justify-between  py-1.5 max-w-[428px] ">
+      <input class="w-[65%] outline-none pl-1 placeholder:text-dark-aquamarine font-medium" type="email" placeholder="Enter Your Email ">
+    <button class="py-3 px-4 bg-dark-aquamarine text-white font-bold rounded">Get Started</button>
+  </div>
+  </div>
+</section>
 <!-- SM Slider  -->
 <section class="py-12">
       <div class="max-w-[724px] max-md:m]px-3 mb-14 mx-auto">
@@ -153,7 +175,7 @@
         </p>
         <p class="text-center text-gravel mt-2.5  ">Yoomi is more than just a regular remote monitoring solution. Our product supports patients and providers through every step of the rehabilitation process</p>
       </div>
-      <div class="container overflow-x-hidden drop-shadow-md mx-auto">
+      <div class="container drop-shadow-md overflow-x-hidden  mx-auto">
         <div class="flex flex-wrap max-lg:flex-col">
           <div class="w-6/12 max-lg:w-full">
             <p
@@ -200,10 +222,83 @@
       </div>
 </section>
 <!-- Tracking Feedback -->
-<section>
- <div class="container mx-auto">
-  
+<section class="py-12">
+ <div 
+ class="container drop-shadow-custom-md mx-auto">
+  <div class="flex flex-wrap ">
+    <div class="w-6/12 max-lg:w-full  flex items-center max-lg:justify-center">
+     <div class="relative w-max">
+      <img src="./assets/images/webp/girl.webp" alt="girl" width="217" class="absolute  -top-[14%] -left-[11%]">
+      <img class="max-w-[490px]" src="./assets/images/webp/yoga-image.webp" alt="yoga-image">
+      <img src="./assets/images/webp/circle-img.webp" alt="circle-img" class="absolute -right-[8%] -top-[14%]">
+     </div>
+    </div>
+    <div class="w-6/12 py-14 max-lg:px-5 max-lg:w-full">
+      <div class="lg:max-w-[468px] max-md:px-3 mb-5 ">
+        <p
+          class="text-dark-aquamarine  font-medium text-base max-md:text-sm max-sm:text-xs"
+        >
+        TRACKING
+        </p>
+        <p
+          class="text-4xl font-normal mt-2 plus-jakarta-font  max-sm:mt-1  leading-[120%]"
+        >
+        Cutting Edge Motion 
+          <span class="font-semibold">  Tracking/Feedback  </span>
+        </p>
+      </div>
+      <div class="flex flex-col gap-2 mt-5">
+        <div class="flex gap-4 items-center">
+          <img src="./assets/images/svg/check.svg" alt="check">
+          <p class="lg:max-w-[394px] text-gravel text-base max-lg:text-sm max-sm:text-xs ">Provides a holistic, real-time analysis of patient exercise form, capturing 300+ data points and critical metrics.</p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <img src="./assets/images/svg/check.svg" alt="check">
+          <p class="lg:max-w-[394px] text-gravel text-base max-lg:text-sm max-sm:text-xs ">Delivers immediate feedback and guidance to correct and improve exercise form</p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <img src="./assets/images/svg/check.svg" alt="check">
+          <p class="lg:max-w-[394px] text-gravel text-base max-lg:text-sm max-sm:text-xs ">Supported by the most accurate motion-tracking model designed for rehabilitation, Yoomi Vision</p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <img src="./assets/images/svg/check.svg" alt="check">
+          <p class="lg:max-w-[394px] text-gravel text-base max-lg:text-sm max-sm:text-xs ">Requires no custom hardware, sensors, or equipment</p>
+        </div>
+          </div>
+    </div>
+  </div>
  </div>
+</section>
+<!--  -->
+<section class="pt-12 pb-24">
+  <div class="container mx-auto ">
+    <div class="flex-wrap flex">
+      <div class="max-lg:w-full w-6/12">
+        <div class="lg:max-w-[404px] max-md:px-3 mb-5 ">
+          <p
+            class="text-dark-aquamarine  font-medium text-base max-md:text-sm max-sm:text-xs"
+          >
+    REPORT
+          </p>
+          <p
+            class="text-4xl font-normal mt-2 plus-jakarta-font  max-sm:mt-1  leading-[120%]"
+          >
+          Reporting 
+            <span class="font-semibold">  + Analytics  </span>
+          </p>
+          <p class="lg:max-w-[385px] text-gravel mt-5 mb-0.5 text-base max-lg:text-sm max-sm:text-xs ">Track patient progress over time with compliance, pain, RPE, ROM and other key metrics</p>
+          <button onmouseover="mousein()" onmouseout="mouseOut()" id="mouse-hover" class="font-semibold mt-9  bg-dark-aquamarine  text-dark-aquamarine rounded border border-solid border-transparent transition-all duration-300 hover:border-dark-aquamarine py-4 px-5">View the Matrics</button>
+        </div>
+      </div>
+      <div class="max-lg:w-full py-12 max-md:py-8  w-6/12">
+        <div class="relative w-max">
+        <img width="549" src="./assets/images/webp/graph-table.webp" alt="table-graph">
+        <img src="./assets/images/webp/graph.webp" alt="graph" class="absolute top-[-13%] left-[-11%]">
+        <img src="./assets/images/webp/days-graph.webp" alt="days-graph" class="absolute right-0 bottom-[-17%]">
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- Through Our Platform -->
 <section class="bg-ghost-white py-20">
@@ -343,8 +438,8 @@
                   <img src="./assets/images/svg/footer-logo.svg" alt="footer-logo">
                 </a>
                 <p class="plus-jakarta-font pt-7  leading-[110%] text-[30px] text-white">Sign Up to Join <span class="font-semibold"> Our Newsletter </span></p>
-                <div class="bg-white mt-12 rounded marker: flex px-1  py-1.5 max-w-[428px] ">
-                    <input class="w-[70%] pl-1 placeholder:text-dark-aquamarine font-medium" type="email" placeholder="Enter Your Email ">
+                <div class="bg-white mt-12 px-1  rounded marker: flex justify-between  py-1.5 max-w-[428px] ">
+                    <input class="w-[65%] outline-none pl-1 placeholder:text-dark-aquamarine font-medium" type="email" placeholder="Enter Your Email ">
                   <button class="py-3 px-4 bg-dark-aquamarine text-white font-bold rounded">Get Started</button>
                 </div>
               </div> 
@@ -355,6 +450,7 @@
             </div>
           </div>
 </section>
+</main>
 <!-- footer -->
 <footer class="bg-black">
   <div class="container pt-[217px] pb-10 mx-auto">
@@ -410,8 +506,7 @@
       <a href="/" class="text-friar-grey text-sm max-sm:text-xs whitespace-nowrap ">Cookies</a>
     </div>
   </div>
-</footer>
-        
+</footer> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -419,6 +514,5 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/app.js"></script>
-    
   </body>
 </html>
