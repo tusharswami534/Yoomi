@@ -12,7 +12,8 @@ const navmenu = () => {
     $('.slider-box').slick({
         infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        variableWidth: true,
       });
 
     // Slider Footer
@@ -33,5 +34,6 @@ const navmenu = () => {
           centerMode: true,
           focusOnSelect: true,
             infinite: true,
+            variableWidth: true,
         });
       });

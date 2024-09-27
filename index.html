@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,13 +54,20 @@
     <script>
       tailwind.config = {
         theme: {
+      
           extend: {
+            dropShadow: {
+        'sm': '0px 13px 18px 0px #0000000F',
+      },
             colors: {
               "dark-aquamarine": "#076787",
               "gravel": "#4D4D4D",
               "gull-grey": "#82B2C2",
               "ghost-white": "#F5F8FA",
               "glacier": "#85B6A6",
+              "white-rock": "#E6E6E6",
+              "gunmetal": "#333434",
+              "friar-grey": "#808080",
               
             },
             container: {
@@ -79,8 +86,8 @@
     </script>
   </head>
   <body>
-    <!-- Header  -->
-    <header>
+<!-- Header  -->
+<header>
       <div class="container mx-auto">
         <nav class="pt-8 flex px-3 justify-between items-center">
           <a href="/">
@@ -129,9 +136,9 @@
           </div>
         </nav>
       </div>
-    </header>
-    <!-- SM Slider  -->
-     <section class="py-12">
+</header>
+<!-- SM Slider  -->
+<section class="py-12">
       <div class="max-w-[724px] max-md:m]px-3 mb-14 mx-auto">
         <p
           class="text-dark-aquamarine text-center font-medium text-base max-md:text-sm max-sm:text-xs"
@@ -191,10 +198,15 @@
         </div>
         </div>
       </div>
-     </section>
-     <!-- Through Our Platform -->
-      <section class="bg-ghost-white py-20">
-        
+</section>
+<!-- Tracking Feedback -->
+<section>
+ <div class="container mx-auto">
+  
+ </div>
+</section>
+<!-- Through Our Platform -->
+<section class="bg-ghost-white py-20">
         <div class="max-w-[724px] max-md:m]px-3 mb-[59px] mx-auto">
           <p
             class="text-dark-aquamarine text-center leading-[120%] font-medium text-base max-md:text-sm max-sm:text-xs"
@@ -234,9 +246,44 @@
             </div>
           </div>
         </div>
-      </section>
-    <!-- Slider Big screen  -->
-    <section class="py-12">
+</section>
+<!-- Recognized by Leading Healthcare Institutions -->
+<section class="pb-12 pt-[87px]">
+        <div class="max-w-[684px] max-md:m]px-3 mb-[59px] mx-auto">
+          <p
+            class="text-dark-aquamarine text-center leading-[120%] font-medium text-base max-md:text-sm max-sm:text-xs"
+          >
+          Partners
+          </p>
+          <p
+            class="text-4xl font-normal mt-2 plus-jakarta-font  max-sm:mt-1 text-center leading-[120%]"
+          >
+          Recognized by Leading 
+            <span class="font-semibold">  Healthcare Institutions </span>
+          </p>
+        </div>
+        <div class="container mx-auto">
+          <div class="flex flex-wrap justify-center gap-6 ">
+            <div class="flex min-w-[207px] group min-h-[137px] border border-solid drop-shadow-sm  boredr-white-rock rounded justify-center items-center ">
+              <img class="pointer-events-none group-hover:scale-125 transition-all duration-300 " src="./assets/images/svg/nih-logo.svg" alt="nih-logo">
+            </div>
+            <div class="flex min-w-[207px] group min-h-[137px] border border-solid drop-shadow-sm  boredr-white-rock rounded justify-center items-center ">
+              <img class="pointer-events-none group-hover:scale-125 transition-all duration-300 " src="./assets/images/svg/lvx-logo.svg" alt="nih-logo">
+            </div>
+            <div class="flex min-w-[207px] group min-h-[137px] border border-solid drop-shadow-sm  boredr-white-rock rounded justify-center items-center ">
+              <img class="pointer-events-none group-hover:scale-125 transition-all duration-300 " src="./assets/images/svg/rwj-logo.svg" alt="nih-logo">
+            </div>
+            <div class="flex min-w-[207px] group min-h-[137px] border border-solid drop-shadow-sm  boredr-white-rock rounded justify-center items-center ">
+              <img class="pointer-events-none group-hover:scale-125 transition-all duration-300 " src="./assets/images/svg/ff-logo.svg" alt="nih-logo">
+            </div>
+            <div class="flex min-w-[207px] group min-h-[137px] border border-solid drop-shadow-sm  boredr-white-rock rounded justify-center items-center ">
+              <img class="pointer-events-none group-hover:scale-125 transition-all duration-300 " src="./assets/images/svg/cornell-logo.svg" alt="nih-logo">
+            </div>
+          </div>
+        </div>
+</section>
+ <!-- Slider Big screen  -->
+<section class="py-12">
       <div class="container mx-auto px-3">
         <div class="max-w-[615px] mb-14 mx-auto">
           <p
@@ -284,7 +331,86 @@
               </div>
             </div>
           </div>
-        </section>
+</section>
+<!-- form -->
+<section class="mb-[-107px]">
+          <div class="container overflow-hidden rounded-[32px] relative bg-dark-aquamarine">
+            <img src="./assets/images/svg/footer-bottom-logo.svg" alt="footer-bottom-logo" class="absolute bottom-0 right-0">
+            <div class="flex flex-wrap">
+              <div class="w-6/12 justify-center items-center flex  max-lg:w-full">
+                <div class="max-w-[441px]">
+                <a href="/">
+                  <img src="./assets/images/svg/footer-logo.svg" alt="footer-logo">
+                </a>
+                <p class="plus-jakarta-font pt-7  leading-[110%] text-[30px] text-white">Sign Up to Join <span class="font-semibold"> Our Newsletter </span></p>
+                <div class="bg-white mt-12 rounded marker: flex px-1  py-1.5 max-w-[428px] ">
+                    <input class="w-[70%] pl-1 placeholder:text-dark-aquamarine font-medium" type="email" placeholder="Enter Your Email ">
+                  <button class="py-3 px-4 bg-dark-aquamarine text-white font-bold rounded">Get Started</button>
+                </div>
+              </div> 
+              </div>
+               <div class="w-6/12 pt-7 pb-5 flex items-center justify-center max-lg:w-full">
+              <img class="max-w-80" src="./assets/images/webp/man.webp" alt="">
+            </div>
+            </div>
+          </div>
+</section>
+<!-- footer -->
+<footer class="bg-black">
+  <div class="container pt-[217px] pb-10 mx-auto">
+    <div class="flex flex-wrap ">
+      <div class="w-7/12 max-lg:w-full">
+        <a href="/">
+          <img class="pointer-events-none" src="./assets/images/svg/footer-logo.svg" alt="footer-logo">
+        </a>
+        <p class="text-white max-w-[277px] font-light leading-[150%] pt-7">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” </p>
+        <a class="gap-4 text-white flex mt-7" href="mailto:contact@yoomi.com">
+          <img src="./assets/images/svg/mail.svg" alt="mail">
+          contact@yoomi.com
+        </a>
+        <a class="gap-4 text-white flex mt-7" href="tel:+123456789">
+          <img src="./assets/images/svg/call.svg" alt="call">
+          +123 456 789
+        </a>
+      </div>
+      <div class="w-5/12 justify-end flex max-lg:w-full">
+        <div class="flex w-full max-lg:flex-wrap gap-7 max-lg:justify-center max-lg:items-center">
+          <div class="w-4/12 max-lg:w-6/12 max-md:w-full">
+            <p class="font-semibold text-sm max-sm:text-xs text-white">About Us</p>
+            <ul class="list-none">
+              <li><a href="/" class="text-sm max-sm:text-xs  text-white"> Meet the Team</a></li>
+              <li><a href="/" class="text-sm max-sm:text-xs  text-white"> Our Mission</a></li>
+              <li><a href="/" class="text-sm max-sm:text-xs  text-white"> Our Vision</a></li>
+            </ul>
+          </div>
+          <div class="w-4/12 max-lg:w-6/12 max-md:w-full">
+            <p class="font-semibold text-sm max-sm:text-xs text-white">Contact Us</p>
+            <ul class="list-none">
+              <li><a href="/" class="text-sm max-sm:text-xs  text-white"> Twitter</a></li>
+              <li><a href="/" class="text-sm max-sm:text-xs  text-white"> Instagram</a></li>
+              <li><a href="/" class="text-sm max-sm:text-xs  text-white"> Linkedin</a></li>
+            </ul>
+          </div>
+          <div class="w-4/12 max-lg:w-6/12 max-md:w-full">
+            <p class="font-semibold text-sm max-sm:text-xs text-white">News</p>
+            <ul class="list-none">
+              <li><a href="/" class="text-sm max-sm:text-xs  text-white"> Recent </a></li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border border-b-2 border-gunmetal"></div>
+  <div class="container py-6 mx-auto">
+    <div class="max-w-[304px] flex gap-7 ml-auto">
+      <a href="/" class="text-friar-grey text-sm max-sm:text-xs whitespace-nowrap ">Terms of Service</a>
+      <a href="/" class="text-friar-grey text-sm max-sm:text-xs whitespace-nowrap ">Privacy Policy</a>
+      <a href="/" class="text-friar-grey text-sm max-sm:text-xs whitespace-nowrap ">Cookies</a>
+    </div>
+  </div>
+</footer>
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
